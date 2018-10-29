@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'reactstrap';
 
 const propTypes = {
   children: PropTypes.node,
@@ -16,24 +17,15 @@ class DefaultFooter extends Component {
       return (
       <React.Fragment>
           <span>
-
-            <div className="row">
-                <div className="col-md-1">
-                  <a href="https://github.com/cesar-ferreira">
-                      <i className="fa fa-instagram fa-lg mt-4"></i>
-                  </a>
-                </div>
-                <div className="col-md-1">
-                   <a href="https://github.com/cesar-ferreira">
-                       <i className="fa fa-facebook-square fa-lg mt-4"></i>
-                   </a>
-                </div>
-                <div className="col-md-1">
-                   <a href="https://github.com/cesar-ferreira">
-                       <i className="fa fa-twitter-square fa-lg mt-4"></i>
-                   </a>
-                </div>
-            </div>
+              <a href="https://github.com/cesar-ferreira">
+                <Button size="sm" className="btn-facebook btn-brand icon mr-1 mb-1"><i className="fa fa-facebook"></i></Button>
+              </a>
+              <a href="https://github.com/cesar-ferreira">
+                <Button size="sm" className="btn-twitter btn-brand icon mr-1 mb-1"><i className="fa fa-twitter"></i></Button>
+              </a>
+              <a href="https://github.com/cesar-ferreira">
+                <Button size="sm" className="btn-instagram btn-brand icon mr-1 mb-1"><i className="fa fa-instagram"></i></Button>
+              </a>
           </span>
         <span className="ml-auto">Powered by <a href="https://github.com/cesar-ferreira">César Ferreira</a> &copy; 2018.</span>
       </React.Fragment>
@@ -45,3 +37,6 @@ DefaultFooter.propTypes = propTypes;
 DefaultFooter.defaultProps = defaultProps;
 
 export default DefaultFooter;
+
+
+
