@@ -7,10 +7,16 @@ function Loading() {
   return <div>Loading...</div>;
 }
 
+const Forms = Loadable({
+    loader: () => import('./views/Base/Form'),
+    loading: Loading,
+});
+
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
-  { path: '/', exact: true, name: 'Home', component: DefaultLayout }
+    { path: '/base/forms', name: 'Forms', component: Forms },
+    { path: '/', exact: true, name: 'Home', component: DefaultLayout }
 ];
 
 export default routes;

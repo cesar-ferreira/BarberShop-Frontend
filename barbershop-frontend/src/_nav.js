@@ -1,15 +1,6 @@
 export default {
   items: [
     {
-      name: 'Dashboard',
-      url: '/dashboard',
-      icon: 'icon-speedometer',
-      badge: {
-        variant: 'info',
-        text: 'NEW',
-      },
-    },
-    {
       title: true,
       name: 'Theme',
       wrapper: {            // optional wrapper object
@@ -43,17 +34,17 @@ export default {
     },
     {
       name: 'Agendamento',
-      url: '/base',
+      url: '/Base',
       icon: 'icon-puzzle',
       children: [
         {
-          name: 'Novo agendamento',
-          url: '/base/breadcrumbs',
-          icon: 'icon-puzzle',
+            name: 'Novo agendamento',
+            url: '/base/forms',
+            icon: 'icon-puzzle',
         },
         {
           name: 'Editar agendamento',
-          url: '/base/cards',
+          url: '/Base/cards',
           icon: 'icon-puzzle',
         }
         ]
