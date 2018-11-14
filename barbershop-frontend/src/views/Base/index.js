@@ -1,6 +1,10 @@
-import Forms from './Forms';
+import Forms from './Form';
+import Calendar from './Calendar';
+import SelectComponent from './Select';
 
 export {
-  Forms
+    Forms,
+    Calendar,
+    SelectComponent
 };
 

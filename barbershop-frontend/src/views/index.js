@@ -1,9 +1,13 @@
 import {
-  Forms,
+    Forms,
+    Calendar,
+    SelectComponent
 } from './Base';
 
 
 export {
-  Forms,
+    Forms,
+    Calendar,
+    SelectComponent
 };
 

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Calendar, SelectComponent } from '../../Base';
+import { Bar, Doughnut, Line, Pie, Polar, Radar } from 'react-chartjs-2';
+import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import {
   Badge,
   Button,
@@ -24,29 +27,6 @@ import {
   Label,
   Row,
 } from 'reactstrap';
-
-var groups = [{
-        groupId: "asia",
-        title: "Asia"
-    }, {
-        groupId: "africa",
-        title: "Africa"
-    }, {
-        groupId: "europe",
-        title: "Europe"
-    }],
-    countries = [
-        ["asia", "china"],
-        ["asia", "korea"],
-        ["asia", "japan"],
-        ["africa", "nigeria"],
-        ["africa", "congo"],
-        ["africa", "zimbabwe"],
-        ["europe", "germany"],
-        ["europe", "poland"],
-        ["europe", "spain"],
-    ];
-
 
 class Forms extends Component {
   constructor(props) {
@@ -77,12 +57,8 @@ class Forms extends Component {
             <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
               <Card>
                 <CardHeader>
-                  <i className="fa fa-edit"></i>Form Elements
-                  <div className="card-header-actions">
-                    <Button color="link" className="card-header-action btn-setting"><i className="icon-settings"></i></Button>
-                    <Button color="link" className="card-header-action btn-minimize" data-target="#collapseExample" onClick={this.toggle}><i className="icon-arrow-up"></i></Button>
-                    <Button color="link" className="card-header-action btn-close" onClick={this.toggleFade}><i className="icon-close"></i></Button>
-                  </div>
+                  <i className="fa fa-edit"></i>Agendamento
+
                 </CardHeader>
                 <Collapse isOpen={this.state.collapse} id="collapseExample">
                   <CardBody>
@@ -148,6 +124,8 @@ class Forms extends Component {
                           </InputGroup>
                         </div>
                       </FormGroup>
+                        <Calendar/>
+                        <SelectComponent/>
                       <div className="form-actions">
                         <Button type="submit" color="primary">Save changes</Button>
                         <Button color="secondary">Cancel</Button>
