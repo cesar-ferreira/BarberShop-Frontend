@@ -63,7 +63,7 @@ export default {
           children: [
               {
                   name: 'Clientes',
-                  url: '/notifications/alerts',
+                  url: '/base/gallery',
                   icon: 'icon-bell',
               },
               {

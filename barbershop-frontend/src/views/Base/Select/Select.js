@@ -1,16 +1,23 @@
 import React, { Component } from 'react'
 import Select from 'react-select'
-import Forms from "../Form";
+
+import makeAnimated from 'react-select/lib/animated';
+
 
 const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
+    { value: 'Barba', label: 'Barba' },
+    { value: 'Cabelo', label: 'Cabelo' },
+    { value: 'Bigode', label: 'Bigode' }
 ];
 
-const SelectComponent = () => (
-    <Select options={options} />
-);
 
-
-export default SelectComponent;
+export default function SelectComponent() {
+    return (
+        <Select
+            closeMenuOnSelect={false}
+            components={makeAnimated()}
+            isMulti
+            options={options}
+        />
+    );
+}

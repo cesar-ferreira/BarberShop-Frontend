@@ -66,24 +66,14 @@ class Forms extends Component {
                       <FormGroup>
                         <Label htmlFor="prependedInput">Prepended text</Label>
                         <div className="controls">
-                          <InputGroup className="input-prepend">
-                            <InputGroupAddon addonType="prepend">
-                              <InputGroupText>@</InputGroupText>
-                            </InputGroupAddon>
-                            <Input id="prependedInput" size="16" type="text" />
-                          </InputGroup>
+                            <Calendar/>
                           <p className="help-block">Here's some help text</p>
                         </div>
                       </FormGroup>
                       <FormGroup>
                         <Label htmlFor="appendedInput">Appended text</Label>
                         <div className="controls">
-                          <InputGroup>
-                            <Input id="appendedInput" size="16" type="text" />
-                            <InputGroupAddon addonType="append">
-                              <InputGroupText>.00</InputGroupText>
-                            </InputGroupAddon>
-                          </InputGroup>
+                            <SelectComponent/>
                           <span className="help-block">Here's more help text</span>
                         </div>
                       </FormGroup>
@@ -124,8 +114,8 @@ class Forms extends Component {
                           </InputGroup>
                         </div>
                       </FormGroup>
-                        <Calendar/>
-                        <SelectComponent/>
+
+
                       <div className="form-actions">
                         <Button type="submit" color="primary">Save changes</Button>
                         <Button color="secondary">Cancel</Button>
