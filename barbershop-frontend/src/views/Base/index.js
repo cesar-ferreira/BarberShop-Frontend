@@ -1,6 +1,6 @@
-import Forms from './Form';
-import Calendar from './Calendar';
-import SelectComponent from './Select';
+import Forms from './Form/Forms';
+import Calendar from './Calendar/Calendar';
+import SelectComponent from './Select/Select';
 
 export {
     Forms,

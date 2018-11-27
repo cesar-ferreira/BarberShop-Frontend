@@ -8,7 +8,7 @@ function Loading() {
 }
 
 const Forms = Loadable({
-    loader: () => import('./views/Base/Form'),
+    loader: () => import('./views/Base/Form/Forms'),
     loading: Loading,
 });
 
