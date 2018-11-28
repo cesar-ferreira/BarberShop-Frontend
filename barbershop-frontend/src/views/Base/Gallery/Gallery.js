@@ -1,58 +1,46 @@
-import React from 'react'
-import {  Col, Row } from 'reactstrap';
-import { Grid, Image } from 'semantic-ui-react'
+import React, {Component} from 'react'
+import { Card, Col, Row, CardImg } from 'reactstrap';
 
-const GridGallery = () => (
-    <Grid>
-        <Grid.Row columns={3}>
-            <Row>
-                <Col xs="3" sm="3" md="3">
-                    <Grid.Column>
-                        <Image src={'../../assets/img/image.png'} />
-                    </Grid.Column>
-                    <Grid.Column>
-                        <Image src={'../../assets/img/image.png'} />
-                    </Grid.Column>
-                    <Grid.Column>
-                        <Image src={'../../assets/img/image.png'} />
-                    </Grid.Column>
-                </Col>
-            </Row>
-        </Grid.Row>
+class GridGallery extends Component {
 
-        <Grid.Row columns={4}>
-            <Grid.Column>
-                <Image src={'../../assets/img/image.png'} />
-            </Grid.Column>
-            <Grid.Column>
-                <Image src={'../../assets/img/image.png'} />
-            </Grid.Column>
-            <Grid.Column>
-                <Image src={'../../assets/img/image.png'} />
-            </Grid.Column>
-            <Grid.Column>
-                <Image src={'../../assets/img/image.png'} />
-            </Grid.Column>
-        </Grid.Row>
-
-        <Grid.Row columns={5}>
-            <Grid.Column>
-                <Image src={'../../assets/img/image.png'} />
-            </Grid.Column>
-            <Grid.Column>
-                <Image src={'../../assets/img/image.png'} />
-            </Grid.Column>
-            <Grid.Column>
-                <Image src={'../../assets/img/image.png'} />
-            </Grid.Column>
-            <Grid.Column>
-                <Image src={'../../assets/img/image.png'} />
-            </Grid.Column>
-            <Grid.Column>
-                <Image src={'../../assets/img/image.png'} />
-            </Grid.Column>
-        </Grid.Row>
-    </Grid>
-);
+    render() {
+        return (
+            <div className="animated fadeIn">
+                <Row>
+                    <Col xs="3" sm="6" md="4">
+                        <Card>
+                            <CardImg src={'../../assets/img/image.png'} />
+                        </Card>
+                    </Col>
+                    <Col xs="3" sm="6" md="4">
+                        <Card>
+                            <CardImg src={'../../assets/img/image.png'} />
+                        </Card>
+                    </Col>
+                    <Col xs="3" sm="6" md="4">
+                        <Card>
+                            <CardImg src={'../../assets/img/image.png'} />
+                        </Card>
+                    </Col>
+                    <Col xs="3" sm="6" md="4">
+                        <Card>
+                            <CardImg src={'../../assets/img/image.png'} />
+                        </Card>
+                    </Col>
+                    <Col xs="3" sm="6" md="4">
+                        <Card>
+                            <CardImg src={'../../assets/img/image.png'} />
+                        </Card>
+                    </Col>
+                    <Col xs="3" sm="6" md="4">
+                        <Card>
+                            <CardImg src={'../../assets/img/image.png'} />
+                        </Card>
+                    </Col>
+                </Row>
+            </div>
+        );
+    }
+}
 
 export default GridGallery
