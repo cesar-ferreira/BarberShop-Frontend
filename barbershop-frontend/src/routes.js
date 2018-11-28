@@ -22,12 +22,18 @@ const GridGallery = Loadable({
     loading: Loading,
 });
 
+const Tables = Loadable({
+    loader: () => import('./views/Base/Table/Table'),
+    loading: Loading,
+});
+
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
     { path: '/base/forms', name: 'Forms', component: Forms },
     { path: '/base/createService', name: 'FormCreateService', component: FormCreateService },
     { path: '/media', name: 'GridGallery', component: GridGallery },
+    { path: '/table', name: 'Table', component: Tables },
     { path: '/', exact: true, name: 'Home', component: DefaultLayout }
 ];
 

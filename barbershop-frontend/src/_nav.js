@@ -29,8 +29,8 @@ export default {
             icon: 'icon-puzzle',
         },
         {
-          name: 'Editar agendamento',
-          url: '/Base/cards',
+          name: 'Horários agendados',
+          url: '/table',
           icon: 'icon-puzzle',
         }
         ]

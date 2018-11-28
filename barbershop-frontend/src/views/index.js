@@ -3,7 +3,8 @@ import {
     Calendar,
     SelectComponent,
     FormCreateService,
-    GridGallery
+    GridGallery,
+    Tables
 } from './Base';
 
 export {
@@ -11,6 +12,7 @@ export {
     Calendar,
     SelectComponent,
     FormCreateService,
-    GridGallery
+    GridGallery,
+    Tables
 };
 
