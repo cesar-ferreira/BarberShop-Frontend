@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { request } from 'graphql-request';
 import { Bar, Doughnut, Line, Pie, Polar, Radar } from 'react-chartjs-2';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import {
@@ -27,18 +28,54 @@ import {
   Row,
 } from 'reactstrap';
 
+
+
+
 class FormCreateService extends Component {
   constructor(props) {
     super(props);
 
+      this.handleSubmit = this.handleSubmit.bind(this);
+      this.handleChange = this.handleChange.bind(this);
     this.toggle = this.toggle.bind(this);
     this.toggleFade = this.toggleFade.bind(this);
     this.state = {
       collapse: true,
       fadeIn: true,
-      timeout: 300
+      timeout: 300,
+        name: undefined,
+        description: undefined,
+        price: undefined,
+        time: undefined,
     };
   }
+
+    handleChange(event) {
+        this.setState({
+            name: event.target.value,
+            description: event.target.value,
+            price: event.target.value,
+            time: event.target.value
+        });
+    }
+
+    handleSubmit(event) {
+        const mutation = `{
+              mutation{
+                  serviceCreate(name:cesar,
+                                description:"afasfa",
+                                price:45,
+                                time:30,
+                                status:ACTIVE){
+               
+                  }
+              }
+            
+         }`;
+
+        request('http://localhost:3030/', mutation).then(data => console.log(data));
+        event.preventDefault();
+    }
 
   toggle() {
     this.setState({ collapse: !this.state.collapse });

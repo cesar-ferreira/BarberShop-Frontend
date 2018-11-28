@@ -1,15 +1,6 @@
 export default {
   items: [
     {
-      title: true,
-      name: 'Theme',
-      wrapper: {            // optional wrapper object
-        element: '',        // required valid HTML5 element tag
-        attributes: {}        // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
-      },
-      class: ''             // optional class names space delimited list for title item ex: "text-center"
-    },
-    {
       name: 'Barbearia',
       url: '/theme/colors',
       icon: 'icon-drop',
@@ -19,11 +10,6 @@ export default {
       url: '/base/createService',
       icon: 'icon-pencil',
     },
-      {
-          name: 'Equipe',
-          url: '/theme/typography',
-          icon: 'icon-pencil',
-      },
     {
       title: true,
       name: 'Components',
@@ -49,6 +35,12 @@ export default {
         }
         ]
     },
+      {
+          name: 'Mídia',
+          url: '/media',
+          icon: 'icon-bell'
+
+      },
     {
       divider: true,
     },
@@ -56,39 +48,6 @@ export default {
       title: true,
       name: 'Sobre',
     },
-      {
-          name: 'Mídia',
-          url: '/media',
-          icon: 'icon-bell',
-          children: [
-              {
-                  name: 'Clientes',
-                  url: '/base/gallery',
-                  icon: 'icon-bell',
-              },
-              {
-                  name: 'Barbearia',
-                  url: '/notifications/alerts',
-                  icon: 'icon-bell',
-              },
-              {
-                  name: 'Eventos',
-                  url: '/notifications/badges',
-                  icon: 'icon-bell',
-              },
-              {
-                  name: 'Fotos',
-                  url: '/notifications/badges',
-                  icon: 'icon-bell',
-              },
-              {
-                  name: 'Vídeos',
-                  url: '/notifications/badges',
-                  icon: 'icon-bell',
-              }
-          ],
-      },
-
 
     {
       name: 'Contato',
