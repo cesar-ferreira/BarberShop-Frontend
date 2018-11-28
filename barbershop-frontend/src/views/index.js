@@ -1,13 +1,15 @@
 import {
     Forms,
     Calendar,
-    SelectComponent
+    SelectComponent,
+    FormCreateService
 } from './Base';
 
 
 export {
     Forms,
     Calendar,
-    SelectComponent
+    SelectComponent,
+    FormCreateService
 };
 

@@ -16,7 +16,7 @@ export default {
     },
     {
       name: 'Serviços',
-      url: '/theme/typography',
+      url: '/base/createService',
       icon: 'icon-pencil',
     },
       {

@@ -27,6 +27,9 @@ class Calendar extends React.Component {
             <DatePicker
                 selected={this.state.startDate}
                 onChange={this.handleChange}
+                showTimeSelect
+
+                dateFormat="MMMM d, yyyy h:mm aa"
             />
         );
     }

@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import { Calendar, SelectComponent } from '../../Base';
-import "react-datepicker/dist/react-datepicker.css";
-
-
 import { Bar, Doughnut, Line, Pie, Polar, Radar } from 'react-chartjs-2';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import {
@@ -31,7 +27,7 @@ import {
   Row,
 } from 'reactstrap';
 
-class Forms extends Component {
+class FormCreateService extends Component {
   constructor(props) {
     super(props);
 
@@ -60,25 +56,38 @@ class Forms extends Component {
             <Fade timeout={this.state.timeout} in={this.state.fadeIn}>
               <Card>
                 <CardHeader>
-                  <i className="fa fa-edit"></i>Agendamento
+                  <i className="fa fa-edit"></i>Criar Serviço
 
                 </CardHeader>
                 <Collapse isOpen={this.state.collapse} id="collapseExample">
                   <CardBody>
                     <Form className="form-horizontal">
+                        <FormGroup>
+                            <Label htmlFor="name">Nome</Label>
+                            <Input type="text" id="name" placeholder="Digite o seu nome" required />
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor="name">Descrição</Label>
+                            <Input type="text" id="name" placeholder="Digite uma descrição" required />
+                        </FormGroup>
                       <FormGroup>
-                        <Label htmlFor="prependedInput">Data</Label>
+                        <Label htmlFor="appendedPrependedInput">Preço</Label>
                         <div className="controls">
-                            <Calendar/>
+                          <InputGroup className="input-prepend">
+                            <InputGroupAddon addonType="prepend">
+                              <InputGroupText>$</InputGroupText>
+                            </InputGroupAddon>
+                            <Input id="appendedPrependedInput" size="16" type="text" />
+                            <InputGroupAddon addonType="append">
+                              <InputGroupText>.00</InputGroupText>
+                            </InputGroupAddon>
+                          </InputGroup>
                         </div>
                       </FormGroup>
-                      <FormGroup>
-                        <Label htmlFor="appendedInput">Serviço</Label>
-                        <div className="controls">
-                            <SelectComponent/>
-                        </div>
-                      </FormGroup>
-
+                        <FormGroup>
+                            <Label htmlFor="name">Tempo</Label>
+                            <Input type="text" id="name" placeholder="Digite a quantidade de tempo em minutos" required />
+                        </FormGroup>
 
 
                       <div className="form-actions">
@@ -97,5 +106,5 @@ class Forms extends Component {
   }
 }
 
-export default Forms;
+export default FormCreateService;
 

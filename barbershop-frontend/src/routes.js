@@ -12,10 +12,16 @@ const Forms = Loadable({
     loading: Loading,
 });
 
+const FormCreateService = Loadable({
+    loader: () => import('./views/Base/Form/FormCreateService'),
+    loading: Loading,
+});
+
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
     { path: '/base/forms', name: 'Forms', component: Forms },
+    { path: '/base/createService', name: 'FormCreateService', component: FormCreateService },
     { path: '/', exact: true, name: 'Home', component: DefaultLayout }
 ];
 
