@@ -9,3 +9,24 @@ export const GET_SERVICE = gql`
     }
 `;
 
+export const GET_SCHEDULE = gql`
+  query{
+        user{
+          	name
+            contact{
+              number
+            }
+          	schedule{
+              timestamp
+              serviceId
+            
+            }
+          
+        },
+  			service{
+          name
+          id
+        }
+   }
+`;
+

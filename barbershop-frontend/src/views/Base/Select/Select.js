@@ -8,7 +8,6 @@ const { GET_SERVICE } = require('../../../api/query');
 const SelectComponent = () => (
     <Query query={GET_SERVICE}>
         {({ loading, error, data }) => {
-            console.log(data.services);
 
             if (loading) return <div>Loading...</div>;
             if (error) return <div>Error :(</div>;

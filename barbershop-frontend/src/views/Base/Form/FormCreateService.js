@@ -91,7 +91,7 @@ class FormCreateService extends Component {
                     <Form className="form-horizontal">
                         <FormGroup>
                             <Label htmlFor="name">Nome</Label>
-                            <Input type="text" id="name" placeholder="Digite o seu nome" required />
+                            <Input type="text" id="name" placeholder="Digite o nome do serviço" required />
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="name">Descrição</Label>
