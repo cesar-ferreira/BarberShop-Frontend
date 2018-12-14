@@ -1,14 +1,16 @@
 import gql from 'graphql-tag';
 
 export const CREATE_SERVICE = gql`
-  mutation($id: ID!) {
-    addStar(input: { starrableId: $id }) {
-      starrable {
-        id
-        viewerHasStarred
+  mutation{
+      serviceCreate(
+          name:SERVICE2,
+          description:"afasfa",
+          price:45,
+          time:30,
+           status:ACTIVE){
+        name
       }
-    }
-  }
+}
 `;
 
 export const CREATE_SCHEDULE = gql`

@@ -7,9 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 
-const client = new ApolloClient({
-    uri: "http://192.168.131.65:3030"
-});
+
+// Pass your GraphQL endpoint to uri
+const client = new ApolloClient({ uri: 'http://192.168.0.108:3030/' });
 
 ReactDOM.render(
     <ApolloProvider client={client}>

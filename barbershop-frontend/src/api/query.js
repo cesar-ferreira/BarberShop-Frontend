@@ -1,11 +1,11 @@
 import gql from 'graphql-tag';
-import { Query } from 'react-apollo';
 
-const GET_DOGS = gql`
-  {
-    dogs {
-      id
-      breed
+export const GET_SERVICE = gql`
+  query{
+        services{
+            value: name,
+            label: name
+        }
     }
-  }
 `;
+
