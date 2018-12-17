@@ -2,31 +2,16 @@ import React, { Component } from 'react';
 import { Calendar, SelectComponent } from '../../Base';
 import "react-datepicker/dist/react-datepicker.css";
 
-
-import { Bar, Doughnut, Line, Pie, Polar, Radar } from 'react-chartjs-2';
-import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import {
-  Badge,
   Button,
-  ButtonDropdown,
   Card,
   CardBody,
-  CardFooter,
   CardHeader,
   Col,
   Collapse,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
   Fade,
   Form,
   FormGroup,
-  FormText,
-  FormFeedback,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
   Label,
   Row,
 } from 'reactstrap';
