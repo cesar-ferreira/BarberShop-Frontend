@@ -9,7 +9,7 @@ import { ApolloProvider } from "react-apollo";
 
 
 // Pass your GraphQL endpoint to uri
-const client = new ApolloClient({ uri: 'http://192.168.0.108:3030/' });
+const client = new ApolloClient({ uri: 'http://localhost:3030/' });
 
 ReactDOM.render(
     <ApolloProvider client={client}>
